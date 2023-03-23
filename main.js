@@ -23,6 +23,5 @@ document.querySelector('#login-email').addEventListener('submit', (e) => {
 	} else {
 		status.textContent = 'Neplatné přihlašovací údaje'
 		passwordInput.value = ''
-		status.
 	}
 })
