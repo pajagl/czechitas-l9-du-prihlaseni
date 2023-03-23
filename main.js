@@ -10,20 +10,19 @@ const user = {
 document.querySelector('#login-email').addEventListener('submit', (e) => {
 	e.preventDefault()
 
-	const napisEmail = document.querySelector('#email')
-	const vlozHeslo = document.querySelector('#password')
+	const emailInput = document.querySelector('#email')
+	const passwordInput = document.querySelector('#password')
 	const container = document.querySelector('.container')
 	const status = document.querySelector('#status')
 
 	if (
-		napisEmail.value === user.email &&
-		vlozHeslo.value === user.password
+		emailInput.value === user.email &&
+		passwordInput.value === user.password
 	) {
 		container.innerHTML = `<h1>Přihlášený uživatel: ${user.name}</h1>`
 	} else {
 		status.textContent = 'Neplatné přihlašovací údaje'
-		vlozHeslo.value = ''
+		passwordInput.value = ''
+		status.
 	}
 })
-
-
